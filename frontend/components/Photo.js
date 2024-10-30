@@ -1,6 +1,8 @@
 import React from "react";
 
 
-export default function Photo() {
-    console.log('photo working')
+export default function Photo({url}) {
+    return (
+        <img src={url}></img>
+    )
 }

@@ -29,13 +29,9 @@ const [nasaPhotoInfo, getNasaPhotoInfo] = useState([]);
 
   return (
     <div>
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-      <PhotoHeader />
-      <Photo />
-      <PhotoFooter />
+      <PhotoHeader title={nasaPhotoInfo.title} bio={nasaPhotoInfo.explanation} />
+      <Photo url={nasaPhotoInfo.url} />
+      <PhotoFooter date={nasaPhotoInfo.date} />
     </div>
 
   )
