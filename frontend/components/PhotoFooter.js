@@ -2,9 +2,9 @@ import React from "react";
 
 export default function PhotoFooter({date}) {
     return (
-        <div>
+        <div id="photoFooter">
             <h4>Photo taken on: {date}</h4>
-            <a href="https://apod.nasa.gov/apod/astropix.html">Credit to Nasa</a>
+            <a href="https://www.nasa.gov/">More Space Info "Here"</a>
         </div>
     )
 }
